@@ -3,7 +3,6 @@ import joblib
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Memuat model dan encoder yang telah dilatih
 pipeline = joblib.load('stress_predictor_pipeline.pkl')
