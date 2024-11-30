@@ -1,11 +1,8 @@
 import streamlit as st
 import joblib
-import warnings
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-
-warnings.filterwarnings("ignore")
 
 # Memuat model dan encoder yang telah dilatih
 pipeline = joblib.load('stress_predictor_pipeline.pkl')
