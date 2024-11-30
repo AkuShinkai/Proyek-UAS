@@ -4,6 +4,9 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+warnings.filterwarnings("ignore")
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
 # Memuat model dan encoder yang telah dilatih
 pipeline = joblib.load('stress_predictor_pipeline.pkl')
 label_encoders = joblib.load('label_encoders.pkl')
